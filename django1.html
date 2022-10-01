@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Calculator2</title>
+</head>
+<script type="text/javascript">
+    function validation()
+    {
+      var e = document.f2.no11.value;
+      var f = document.f2.no22.value;
+
+    if(e=="")
+    {
+        alert("Enter First Number");
+        document.f2.no11.focus();
+        return false;
+    }
+
+    if(isNaN(e))
+    {
+        alert("Please Enter Numeric Number");
+        document.f2.no11.value="";
+        document.f2.no11.focus();
+        return false;
+
+    }
+    if(f=="")
+    {
+        alert("Enter Second Number");
+        document.f2.no22.focus();
+        return false;
+    }
+
+    if(isNaN(f))
+    {
+        alert("Please Enter Numeric Number");
+        document.f2.no22.value="";
+        document.f2.no22.focus();
+        return false;
+  }
+  }
+</script>
+<body>
+<form name="f2" action="calculator2" onsubmit="return validation();">
+    <table border="1">
+        <tr>
+            <tr>
+            <td> Enter 1st Number </td>
+            <td> <input type="text" name="no11"> </td>
+        </tr>
+        <tr>
+            <td>Enter 2nd Number</td>
+            <td> <input type="text" name="no22"> </td>
+        </tr>
+        </tr>
+        <tr>
+            <td colspan="2" align="center"> 
+            <button type="submit" value="add1" name="btn1">Add</button>
+            <button type="submit" value="sub1" name="btn1">Subtract</button>
+            <button type="submit" value="div1" name="btn1">Division</button>
+            <button type="submit" value="mul1" name="btn1">Multiplication</button>
+            <button type="submit" value="fact1" name="btn1">Factorial</button>
+            <button type="submit" value="prime1" name="btn1">Prime</button>
+            <button type="submit" value="fbs1" name="btn1">Febonecc</button>
+        </td>
+        </tr>
+    </table>
+
+</form>
+
+
+</body>
+</html>
+

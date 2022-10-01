@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>yash</title>
+    <script type="text/javascript">
+        function validation()
+        {
+          var a=document.f.v1.value;
+          var b=document.f.w.value;
+           if (a=="")
+                  {
+                      alert("Please Enter First Value ");
+                      document.f.v1.focus();
+                      return false;
+                  }   
+            if (b=="")
+                  {
+                      alert("Please Enter second Value ");
+                      document.f.w.focus();
+                      return false;
+                  }
+          var i=parseInt(a)
+          var k=parseInt(b)
+          if (isNaN(i))
+                   {
+                      alert("Please Enter numeric Value ");
+                      document.f.v1.value="";
+                      document.f.v1.focus();
+                      return false;
+                  }  
+          if (isNaN(k))
+                   {
+                      alert("Please Enter numeric Value ");
+                      document.f.w.focus();
+                       document.f.w.value="";
+                      return false;
+                  }  
+        // var task=document.f.task.value;
+        // if (task=="+")
+        // {
+        //     var ans=i+k;
+        //     document.f.ans.value=ans;
+        // }
+      
+             
+            
+      
+        // }
+        
+        </script>
+        <body bgcolor="#009900">
+                     <form action="#" name="f" onsubmit="return validation();">
+                     <table align="center" bgcolor="red" border="1px solid red" margin="100px" >
+                     <th colspan="2">Calculator</th>
+                     <tr>
+                     <td>First value</td>
+                     <td><input type="text" name="v1" placeholder="Enter first value" ></td>
+                     </tr>
+                     <tr>
+                     <td>Second value</td>
+                     <td><input type="text" name="w" placeholder="Enter first value"  ></td>
+                     </tr>
+                     <tr>
+                     <td colspan="2"><input type="submit" name="task" value="+" >               
+                     <input type="submit" name="task" value="-" >
+                     <input type="submit" name="task" value="*" >
+                     <input type="submit" name="task" value="/" ></td>
+                     </tr>
+                     <tr>
+                        <td>Ans</td>
+                        <td><input name="ans" placeholder="Enter first value"  ></td>
+                        </tr>
+                     </table>
+                      </form>
+      #factorial
+                    <form action="/factTask">
+                    <table align="center" bgcolor="red" border="1px solid red">
+                     <th colspan="2">Factorial Calculator</th>
+                     <tr>
+                     <td>First value</td>
+                     <td><input type="text" name="v1" placeholder="Enter first value"></td>
+                     </tr>
+                     <tr>
+                     
+                     <td colspan="2"><input type="submit" name="task" value="get factorial">
+                     </td>
+                     </table>
+                     </form>
+      
+      #prime number
+                    <form action="/priTask">
+                    <table align="center" bgcolor="red" border="1px solid red">
+                     <th colspan="2">check prime no</th>
+                     <tr>
+                     <td>First value</td>
+                     <td><input type="text" name="v1" placeholder="Enter first value"></td>
+                     </tr>
+                     <tr>
+                     
+                     <td colspan="2"><input type="submit" name="task" value="check">
+                     </td>
+                     </table>
+                     </form>
+      #amongstrong number
+                    <form action="/amongTask">
+                    <table align="center" bgcolor="red" border="1px solid red">
+                     <th colspan="2">check amongstrong number</th>
+                     <tr>
+                     <td>First value</td>
+                     <td><input type="text" name="v1" placeholder="Enter three digit value"></td>
+                     </tr>
+                     <tr>
+                     
+                     <td colspan="2"><input type="submit" name="task" value="check">
+                     </td>
+                     </table>
+                     </form>
+      #sum of digits number
+                    <form action="/sumTask">
+                    <table align="center" bgcolor="red" border="1px solid red">
+                     <th colspan="2">sum of digits</th>
+                     <tr>
+                     <td>First value</td>
+                     <td><input type="text" name="v1" placeholder="Enter three digit value"></td>
+                     </tr>
+                     <tr>
+                     
+                     <td colspan="2"><input type="submit" name="task" value="check">
+                     </td>
+                     </table>
+                     </form>
+      </body>
+</html>

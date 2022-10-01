@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>autofill</title>
+    <script type="text/javascript">
+        function calculate(){
+        var name=document.getElementById("pn").value;
+        var QTY=document.getElementById("QTY").value;
+        var Rate=document.getElementById("rt").value;
+        var tot=QTY*Rate
+        var cg=tot/100*12.5
+        var sg=tot/100*18.5
+        var np=tot+cg+sg
+        var dis=np/100*25
+        var pay=np-dis
+        document.getElementById("tot").value=tot;
+        document.getElementById("cg").value=cg;
+        document.getElementById("sg").value=sg;
+        document.getElementById("np").value=np;
+        document.getElementById("dis").value=dis;
+        document.getElementById("pay").value=pay;
+    }
+         
+
+    </script>
+</head>
+<body>
+   
+    <table>
+    <tr>
+   <td> Product : </td>
+   <td><input type="text" id="pn"></td><br>
+   </tr><tr></tr>
+   <td>QTY : </td>
+   <td><input type="text" id="QTY"></td><br>
+</tr><tr>
+    <td>Rate : </td> 
+    <td><input type="text" id="rt" ></td><br>
+</tr><tr>
+    <td>TOTAL : </td>
+    <td><input type="text" id="tot"></td><br>
+</tr><tr>
+    <td>CGST :</td>
+    <td> <input type="text" id="cg"></td><br>
+</tr><tr>
+    <td>SGST : </td>
+    <td><input type="text" id="sg"></td><br>
+</tr><tr>
+    <td>Net price : </td>
+    <td><input type="text" id="np"></td><br>
+</tr><tr>
+    <td>Discount : </td>
+    <td><input type="text" id="dis"></td><br>
+</tr><tr>
+    <td>Pay : </td>
+    <td><input type="text" id="Pay"></td><br>
+</tr><tr>
+    <td colspan="2"><input type="submit" onclick="calculate();"></td>
+</tr>
+    </table>
+
+</body>
+</html>

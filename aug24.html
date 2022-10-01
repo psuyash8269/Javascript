@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>database</title>
+    <script type="text/javascript">
+        function blur()
+    {
+        var Rno=document.f1.rno.value;
+        var m=document.f1.marks.value;
+        t=Rno*m;
+        document.f1.tot.value=t;
+
+    }
+    </script>
+</head>
+<body>
+    <form action="" name="f1">
+        <table border="5px" align="center" >
+            <tr>
+                <td>
+                    Roll No :
+                </td>
+                <td>
+                    <input type="text" name="rno" placeholder="Enter roll number">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Name :
+                </td>
+                <td>
+                    <input type="text" name="nm" placeholder="Enter name">
+                </td>
+            </tr>
+            <tr>
+
+                <td>
+                    Marks :
+                </td>
+                <td>
+                    <input type="text" name="Marks" placeholder="Enter Marks" onblur="blur();">
+                </td>
+            </tr>     
+            <tr>
+
+                <td>
+                    Marks * Roll no:
+                </td>
+                <td>
+                    <input type="text" name="tot" placeholder="Enter Marks">
+                </td>
+            </tr>             
+        </table>
+        
+    </form>
+
+</body>
+</html>
